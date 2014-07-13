@@ -39,24 +39,7 @@ typedef NS_ENUM(NSInteger, PickerType) {
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        categoryTypes = [[NSArray alloc] initWithObjects:@"Appetizers",@"Breakfast",@"Dessert",@"Drinks",
-                         @"Main Dish/Entree", @"Salad", @"Side Dish", @"Soup", @"Snack",
-                         @"Baby Food", @"Pet Food",nil];
         
-        locationTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue"
-                         ,nil];
-        
-        originatorTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
-                           nil];
-        
-        
-        destinationTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
-                            nil];
-        
-        
-        statusTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
-                       nil];
     }
     return self;
 }
@@ -65,7 +48,24 @@ typedef NS_ENUM(NSInteger, PickerType) {
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Custom initialization
+    categoryTypes = [[NSArray alloc] initWithObjects:@"Appetizers",@"Breakfast",@"Dessert",@"Drinks",
+                     @"Main Dish/Entree", @"Salad", @"Side Dish", @"Soup", @"Snack",
+                     @"Baby Food", @"Pet Food",nil];
     
+    locationTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue"
+                     ,nil];
+    
+    originatorTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
+                       nil];
+    
+    
+    destinationTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
+                        nil];
+    
+    
+    statusTypes = [[NSArray alloc] initWithObjects:@"African",@"American",@"Armenian",@"Barbecue",
+                   nil];
     
     
     nameTextField.text = nil;
